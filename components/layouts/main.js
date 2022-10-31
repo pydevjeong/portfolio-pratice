@@ -9,7 +9,8 @@ const Main=({children,router})=>{
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Ernest Copper - HomePage</title>
       </Head>
-      <Navbar path={router.asPath}/>
+      {/* <Navbar path={router.asPath}/> */}
+      {/* 여기 주석처리 했더니 hydration 에러 사라짐 원인 찾기 */}
       <Container maxW="container.md" pt={14}>
         {children}
       </Container>
