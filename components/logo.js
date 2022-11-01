@@ -22,7 +22,7 @@ const Logo = () => {
 
   return (
     <Link href="/">
-      
+      <a>
         <LogoBox>
           <Image src={footPrintImg} width={20} height={20} alt="Logo" />
           <Text
@@ -34,7 +34,7 @@ const Logo = () => {
             Ernest Copper
           </Text>
         </LogoBox>
-
+        </a>
     </Link>
   );
 };
