@@ -21,21 +21,19 @@ const Logo = () => {
   const footPrintImg = `/images/`;
 
   return (
-    <Link href="/">
-      <a>
-        <LogoBox>
-          <Image src={footPrintImg} width={20} height={20} alt="Logo" />
-          <Text
-            color={useColorModeValue("gray.800", "whiteAlpha.900")}
-            fontFamily="M PLUS Rounded 1c"
-            fontWeight="bold"
-            ml={3}
-          >
-            Ernest Copper
-          </Text>
-        </LogoBox>
-        </a>
-    </Link>
+    (<Link href="/">
+      <LogoBox>
+        <Image src={footPrintImg} width={20} height={20} alt="Logo" />
+        <Text
+          color={useColorModeValue("gray.800", "whiteAlpha.900")}
+          fontFamily="M PLUS Rounded 1c"
+          fontWeight="bold"
+          ml={3}
+        >
+          Ernest Copper
+        </Text>
+      </LogoBox>
+    </Link>)
   );
 };
 
