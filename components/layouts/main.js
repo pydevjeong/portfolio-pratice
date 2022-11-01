@@ -10,7 +10,6 @@ const Main=({children,router})=>{
         <title>Ernest Copper - HomePage</title>
       </Head>
       <Navbar path={router.asPath}/>
-      {/* 여기 주석처리 했더니 hydration 에러 사라짐 원인 찾기 */}
       <Container maxW="container.md" pt={14}>
         {children}
       </Container>

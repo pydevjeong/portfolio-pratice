@@ -12,9 +12,11 @@ import Section from "../components/section";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { BioSection, BioYear } from "../components/bio";
 import { Paragraph } from "../components/paragraph";
+import Layout from "../components/layouts/article";
 
 export default function Home() {
   return (
+    <Layout>
     <Container>
       <Box
         borderRadius="lg"
@@ -105,5 +107,6 @@ export default function Home() {
         </Paragraph>
       </Section>
     </Container>
+    </Layout>
   );
 }
